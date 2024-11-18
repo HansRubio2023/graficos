@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #036cad;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width:990px; 
+}
+
+nav ul li {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+nav ul li img {
+    width: 25%;
+    height: auto;
+    margin-left: -5.3%; 
+    margin-right: 82.5%; 
+}
+
+nav ul li input[type="button"] {
+    height: 30px;
+    margin-left: -85px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    box-shadow: 0 0 15px 1px #67a5cf;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li img {
+        width: 150px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+#densityChart {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    #densityChart {
+        max-height: 500px; 
+    }
+}
+
+#loadData {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #036cad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+#loadData:hover {
+    background-color: #67a5cf;
+}
